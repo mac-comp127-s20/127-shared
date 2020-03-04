@@ -7,8 +7,8 @@ public class Fruit {
     private int numRemaining;
 
     public Fruit(String name, int numRemaining) {
-        this.isApple = name.contains("apple");
-        this.isGrapes = name.contains("grape");
+        this.isApple = name.toLowerCase().contains("apple");
+        this.isGrapes = name.toLowerCase().contains("grape");
         if(!this.isApple && !this.isGrapes) {
             throw new IllegalArgumentException("This fruit must be an apple or grapes!");
         }
@@ -52,6 +52,10 @@ public class Fruit {
                 return "There are no grapes remaining :(";
             }
         }
+    }
+
+    public static void main(String[] args) {
+        Fruit apple = new Fruit("Fuji Apple", 1);
     }
 
 
