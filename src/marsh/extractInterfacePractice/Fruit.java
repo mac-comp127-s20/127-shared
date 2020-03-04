@@ -1,5 +1,10 @@
 package marsh.extractInterfacePractice;
 
+/**
+ * A class to represent eatable fruits.
+ * Apples: singular fruit unit
+ * Grapes: fruit unit with many subparts
+ */
 public class Fruit {
 
     private boolean isGrapes;
@@ -58,6 +63,10 @@ public class Fruit {
 
     public static void main(String[] args) {
         Fruit apple = new Fruit("Fuji Apple", 1);
+        Fruit grape = new Fruit("Concord Grape", 14);
+        System.out.println(grape.eatFruit());
+        System.out.println(apple.eatFruit());
+        System.out.println(apple.eatFruit());
     }
 
 
