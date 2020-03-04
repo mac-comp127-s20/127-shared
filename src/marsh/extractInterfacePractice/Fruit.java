@@ -41,8 +41,10 @@ public class Fruit {
     public String eatFruit() {
         if(this.numRemaining > 0) {
             if(this.isApple) {
+                this.numRemaining--;
                 return "You ate the apple! Yummy!";
             } else {
+                this.numRemaining--;
                 return "You ate one grape! Sure hope there's more left!";
             }
         } else {
