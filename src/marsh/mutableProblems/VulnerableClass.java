@@ -32,6 +32,6 @@ public class VulnerableClass {
     }
 
     public List<String> getHistory() {
-        return history;
+        return this.history;
     }
 }
